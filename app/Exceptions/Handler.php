@@ -4,6 +4,8 @@ namespace App\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Session\TokenMismatchException;
+use Illuminate\Validation\ValidationException;
 
 class Handler extends ExceptionHandler
 {
@@ -46,6 +48,12 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        if ($exception instanceof TokenMismatchException) {
+            return redirect()->back()->with('message','セッションのタイムアウトとなりました。もう一度入力してください。');
+        }
+        if (get_class($exception) == "ErrorException" || $exception instanceof ValidationException) {
+            return parent::render($request, $exception);
+        }
         return parent::render($request, $exception);
     }
 }
