@@ -54,7 +54,6 @@ class Handler extends ExceptionHandler
         if (get_class($exception) == "ErrorException" || $exception instanceof ValidationException) {
             return parent::render($request, $exception);
         }
-        $status = $exception->getStatusCode();
-        return response()->view("errors.common", ['exception' => $exception], $status, $exception->getHeaders());
+        return parent::render($request, $exception);
     }
 }
