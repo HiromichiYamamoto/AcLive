@@ -1,0 +1,12 @@
+/************************
+ * footer
+ ***********************/
+#footer {
+    background-color: $color-black;
+}
+.footer__wrapper {
+    height: 100px;
+    .footer__wrapper--nav {
+        padding: 0 20px;
+    }
+}
