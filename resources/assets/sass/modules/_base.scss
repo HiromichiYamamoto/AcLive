@@ -1,0 +1,47 @@
+/***********************************************************************************************************************
+ * @default
+ **********************************************************************************************************************/
+/****************************************************
+ * BASE
+ ***************************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.25em;
+    color: #333333;
+    border-color: #D8D1BF;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+h1 { font-size: 1.75rem;}
+h2 { font-size: 1.5rem;}
+h3 { font-size: 1.25rem;}
+h4 { font-size: 1rem;}
+h5 { font-size: 0.75rem;}
+h6 { font-size: 0.5rem;}
+
+a,span {
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: inherit;
+    color: inherit;
+}
+a:hover { color: #667b89; }
+
+p { line-height: 1.5em; }
+
+ul, ol { list-style-type: none; }
+li {
+    display: inline-block;
+    font-size: inherit;
+}
