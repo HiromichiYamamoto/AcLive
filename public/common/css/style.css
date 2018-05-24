@@ -142,6 +142,10 @@ legend {
   display: none;
 }
 
+/***************
+color
+ **************/
+
 /***********************************************************************************************************************
  * @default
  **********************************************************************************************************************/
@@ -229,47 +233,223 @@ li {
   font-size: inherit;
 }
 
-/***************
-color
- **************/
-
 /************************
  * header
  ***********************/
 
 #header {
   background-color: #000;
+  opacity: 0.1;
 }
 
 .header__wrapper--nav {
-  height: 48px;
+  height: 50px;
   padding: 0 20px;
 }
 
 .header__wrapper--nav-title {
   color: #FFFFFF;
-  padding-top: 10px;
+  line-height: 50px;
+  font-size: 20px;
 }
 
 /************************
  * footer
  ***********************/
 
-#footer {
+.Footer__wrap {
   background-color: #000;
-}
-
-.footer__wrapper {
   height: 100px;
 }
 
-.footer__wrapper .footer__wrapper--nav {
+.Footer__wrap--nav {
   padding: 0 20px;
 }
 
-.top-before-login-image {
+.Footer__wrap--nav-text1 {
+  color: #FFF;
+  text-align: center;
+  padding: 40px;
+}
+
+.HeadBef__wrap {
+  max-width: 1024px;
+  height: 50px;
+}
+
+.HeadBef__wrap--inner {
+  background-color: #000;
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.HeadBef__wrap--inner--nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+}
+
+.HeadBef__wrap--inner--nav-title {
+  color: #FFFFFF;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.HeadBef__wrap--inner--nav-login {
+  color: #FFFFFF;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.Mdl01Bnr .Mdl01Bnr__base--image {
+  width: 100vw;
+  height: 100vh;
   background-image: url(/images/AnyCas_TOP1.jpg?f795cac7bce7a13c39d7efb5167f32ed);
   background-size: cover;
-  height: 600px;
+  position: relative;
+}
+
+.Mdl01Bnr .Mdl01Bnr__base .Mdl01Bnr__base--text1,
+.Mdl01Bnr .Mdl01Bnr__base .Mdl01Bnr__base--text2,
+.Mdl01Bnr .Mdl01Bnr__base .Mdl01Bnr__base--button,
+.Mdl01Bnr .Mdl01Bnr__base .Mdl02Bnr__base--text1,
+.Mdl01Bnr .Mdl01Bnr__base .Mdl02Bnr__base--text2,
+.Mdl01Bnr .Mdl01Bnr__base .Mdl03Bnr__base--text1,
+.Mdl01Bnr .Mdl01Bnr__base .Mdl03Bnr__base--text2,
+.Mdl01Bnr .Mdl01Bnr__base .Mdl04Bnr__base--text1,
+.Mdl01Bnr .Mdl01Bnr__base .Mdl04Bnr__base--text2 {
+  position: absolute;
+  color: #FFF;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.Mdl01Bnr .Mdl01Bnr__base--text1 {
+  top: 45%;
+  font-size: 2.8em;
+}
+
+.Mdl01Bnr .Mdl01Bnr__base--text2 {
+  font-size: 1.5em;
+  top: 50%;
+}
+
+.Mdl01Bnr .Mdl01Bnr__base--button {
+  top: 58%;
+  display: inline-block;
+  padding: 0.3em 3.5em;
+  text-decoration: none;
+  border: solid 2px #FFF;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  font-size: 20px;
+}
+
+.Mdl01Bnr .Mdl01Bnr__base--button:hover {
+  background: #67c5ff;
+  color: white;
+}
+
+.Mdl02Bnr__base {
+  width: 100%;
+  height: 300px;
+  padding: 50px;
+}
+
+.Mdl02Bnr__base .Mdl01Bnr .Mdl01Bnr__base--text1,
+.Mdl01Bnr .Mdl02Bnr__base .Mdl01Bnr__base--text1,
+.Mdl02Bnr__base .Mdl01Bnr .Mdl01Bnr__base--text2,
+.Mdl01Bnr .Mdl02Bnr__base .Mdl01Bnr__base--text2,
+.Mdl02Bnr__base .Mdl01Bnr .Mdl01Bnr__base--button,
+.Mdl01Bnr .Mdl02Bnr__base .Mdl01Bnr__base--button,
+.Mdl02Bnr__base .Mdl02Bnr__base--text1,
+.Mdl02Bnr__base .Mdl02Bnr__base--text2,
+.Mdl02Bnr__base .Mdl03Bnr__base--text1,
+.Mdl02Bnr__base .Mdl03Bnr__base--text2,
+.Mdl02Bnr__base .Mdl04Bnr__base--text1,
+.Mdl02Bnr__base .Mdl04Bnr__base--text2 {
+  padding: 20px;
+  text-align: center;
+}
+
+.Mdl02Bnr__base--text1 {
+  font-size: 2.8em;
+}
+
+.Mdl02Bnr__base--text2 {
+  font-size: 1.5em;
+  top: 50%;
+}
+
+.Mdl03Bnr__base {
+  background-color: #F5F5F5;
+  width: 100%;
+  height: 300px;
+  padding: 50px;
+}
+
+.Mdl03Bnr__base .Mdl01Bnr .Mdl01Bnr__base--text1,
+.Mdl01Bnr .Mdl03Bnr__base .Mdl01Bnr__base--text1,
+.Mdl03Bnr__base .Mdl01Bnr .Mdl01Bnr__base--text2,
+.Mdl01Bnr .Mdl03Bnr__base .Mdl01Bnr__base--text2,
+.Mdl03Bnr__base .Mdl01Bnr .Mdl01Bnr__base--button,
+.Mdl01Bnr .Mdl03Bnr__base .Mdl01Bnr__base--button,
+.Mdl03Bnr__base .Mdl02Bnr__base--text1,
+.Mdl03Bnr__base .Mdl02Bnr__base--text2,
+.Mdl03Bnr__base .Mdl03Bnr__base--text1,
+.Mdl03Bnr__base .Mdl03Bnr__base--text2,
+.Mdl03Bnr__base .Mdl04Bnr__base--text1,
+.Mdl03Bnr__base .Mdl04Bnr__base--text2 {
+  padding: 20px;
+  text-align: center;
+}
+
+.Mdl03Bnr__base--text1 {
+  font-size: 2.8em;
+}
+
+.Mdl03Bnr__base--text2 {
+  font-size: 1.5em;
+  top: 50%;
+}
+
+.Mdl04Bnr__base {
+  width: 100%;
+  height: 300px;
+  padding: 50px;
+}
+
+.Mdl04Bnr__base .Mdl01Bnr .Mdl01Bnr__base--text1,
+.Mdl01Bnr .Mdl04Bnr__base .Mdl01Bnr__base--text1,
+.Mdl04Bnr__base .Mdl01Bnr .Mdl01Bnr__base--text2,
+.Mdl01Bnr .Mdl04Bnr__base .Mdl01Bnr__base--text2,
+.Mdl04Bnr__base .Mdl01Bnr .Mdl01Bnr__base--button,
+.Mdl01Bnr .Mdl04Bnr__base .Mdl01Bnr__base--button,
+.Mdl04Bnr__base .Mdl02Bnr__base--text1,
+.Mdl04Bnr__base .Mdl02Bnr__base--text2,
+.Mdl04Bnr__base .Mdl03Bnr__base--text1,
+.Mdl04Bnr__base .Mdl03Bnr__base--text2,
+.Mdl04Bnr__base .Mdl04Bnr__base--text1,
+.Mdl04Bnr__base .Mdl04Bnr__base--text2 {
+  padding: 20px;
+  text-align: center;
+}
+
+.Mdl04Bnr__base--text1 {
+  font-size: 2.8em;
+}
+
+.Mdl04Bnr__base--text2 {
+  font-size: 1.5em;
+  top: 50%;
 }
 
