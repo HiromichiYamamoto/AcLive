@@ -1,13 +1,8 @@
 @CHARSET "UTF-8";
 @import "_reset.scss";
-@import "modules/_base.scss";
 @import "config/variable.scss";
+@import "modules/_base.scss";
 @import "modules/_header.scss";
 @import "modules/_footer.scss";
-
-.top-before-login-image {
-    background-image: url("../../../public/common/img/top/AnyCas_TOP1.jpg");
-    background-size:cover;
-    height: 600px;
-}
+@import "modules/top/_index.scss";
 
