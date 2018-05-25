@@ -1,0 +1,17 @@
+/************************
+ * footer
+ ***********************/
+.Footer {
+    &__wrap {
+        background-color: $color-black;
+        height: 100px;
+        &--nav {
+            padding: 0 20px;
+            &-text1 {
+                color: $color-white;
+                text-align: center;
+                padding: 40px;
+            }
+        }
+    }
+}

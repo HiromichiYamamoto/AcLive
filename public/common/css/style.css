@@ -1,0 +1,455 @@
+@charset "UTF-8";
+
+@CHARSET "UTF-8";
+
+
+html {
+  color: #000;
+  background: #FFF;
+}
+
+/*
+    TODO remove settings on BODY since we can't namespace it.
+*/
+
+/*
+    TODO test putting a class on HEAD.
+        - Fails on FF.
+*/
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+/*
+    TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* to preserve line-height and selector appearance */
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*to enable resizing for IE*/
+
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+
+/*because legend doesn't inherit in IE */
+
+legend {
+  color: #000;
+}
+
+/* YUI CSS Detection Stamp */
+
+#yui3-css-stamp.cssreset {
+  display: none;
+}
+
+/***************
+color
+ **************/
+
+/***********************************************************************************************************************
+ * @default
+ **********************************************************************************************************************/
+
+/****************************************************
+ * BASE
+ ***************************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Hiragino Kaku Gothic ProN","\30E1\30A4\30EA\30AA", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.25em;
+  color: #333333;
+  border-color: #D8D1BF;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.75rem;
+}
+
+h6 {
+  font-size: 0.5rem;
+}
+
+a,
+span {
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a:hover {
+  color: #667b89;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  font-size: inherit;
+}
+
+/************************
+ * header
+ ***********************/
+
+#header {
+  background-color: #000;
+  opacity: 0.1;
+}
+
+.header__wrapper--nav {
+  height: 50px;
+  padding: 0 20px;
+}
+
+.header__wrapper--nav-title {
+  color: #FFFFFF;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+/************************
+ * footer
+ ***********************/
+
+.Footer__wrap {
+  background-color: #000;
+  height: 100px;
+}
+
+.Footer__wrap--nav {
+  padding: 0 20px;
+}
+
+.Footer__wrap--nav-text1 {
+  color: #FFF;
+  text-align: center;
+  padding: 40px;
+}
+
+.HeadBef__wrap {
+  max-width: 1024px;
+  height: 50px;
+}
+
+.HeadBef__wrap--inner {
+  background-color: #000;
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.HeadBef__wrap--inner--nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+}
+
+.HeadBef__wrap--inner--nav-title {
+  color: #FFFFFF;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.HeadBef__wrap--inner--nav-login {
+  color: #FFFFFF;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.Mdl01Bnr .Mdl01Bnr__base--image {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/images/AnyCas_TOP1.jpg?f795cac7bce7a13c39d7efb5167f32ed);
+  background-size: cover;
+  position: relative;
+}
+
+.Mdl01Bnr .Mdl01Bnr__base .Mdl01Bnr__base--text1,
+.Mdl01Bnr .Mdl01Bnr__base .Mdl01Bnr__base--text2,
+.Mdl01Bnr .Mdl01Bnr__base .Mdl01Bnr__base--button,
+.Mdl01Bnr .Mdl01Bnr__base .Mdl02Bnr__base--text1,
+.Mdl01Bnr .Mdl01Bnr__base .Mdl02Bnr__base--text2,
+.Mdl01Bnr .Mdl01Bnr__base .Mdl03Bnr__base--text1,
+.Mdl01Bnr .Mdl01Bnr__base .Mdl03Bnr__base--text2,
+.Mdl01Bnr .Mdl01Bnr__base .Mdl04Bnr__base--text1,
+.Mdl01Bnr .Mdl01Bnr__base .Mdl04Bnr__base--text2 {
+  position: absolute;
+  color: #FFF;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.Mdl01Bnr .Mdl01Bnr__base--text1 {
+  top: 45%;
+  font-size: 2.8em;
+}
+
+.Mdl01Bnr .Mdl01Bnr__base--text2 {
+  font-size: 1.5em;
+  top: 50%;
+}
+
+.Mdl01Bnr .Mdl01Bnr__base--button {
+  top: 58%;
+  display: inline-block;
+  padding: 0.3em 3.5em;
+  text-decoration: none;
+  border: solid 2px #FFF;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  font-size: 20px;
+}
+
+.Mdl01Bnr .Mdl01Bnr__base--button:hover {
+  background: #67c5ff;
+  color: white;
+}
+
+.Mdl02Bnr__base {
+  width: 100%;
+  height: 300px;
+  padding: 50px;
+}
+
+.Mdl02Bnr__base .Mdl01Bnr .Mdl01Bnr__base--text1,
+.Mdl01Bnr .Mdl02Bnr__base .Mdl01Bnr__base--text1,
+.Mdl02Bnr__base .Mdl01Bnr .Mdl01Bnr__base--text2,
+.Mdl01Bnr .Mdl02Bnr__base .Mdl01Bnr__base--text2,
+.Mdl02Bnr__base .Mdl01Bnr .Mdl01Bnr__base--button,
+.Mdl01Bnr .Mdl02Bnr__base .Mdl01Bnr__base--button,
+.Mdl02Bnr__base .Mdl02Bnr__base--text1,
+.Mdl02Bnr__base .Mdl02Bnr__base--text2,
+.Mdl02Bnr__base .Mdl03Bnr__base--text1,
+.Mdl02Bnr__base .Mdl03Bnr__base--text2,
+.Mdl02Bnr__base .Mdl04Bnr__base--text1,
+.Mdl02Bnr__base .Mdl04Bnr__base--text2 {
+  padding: 20px;
+  text-align: center;
+}
+
+.Mdl02Bnr__base--text1 {
+  font-size: 2.8em;
+}
+
+.Mdl02Bnr__base--text2 {
+  font-size: 1.5em;
+  top: 50%;
+}
+
+.Mdl03Bnr__base {
+  background-color: #F5F5F5;
+  width: 100%;
+  height: 300px;
+  padding: 50px;
+}
+
+.Mdl03Bnr__base .Mdl01Bnr .Mdl01Bnr__base--text1,
+.Mdl01Bnr .Mdl03Bnr__base .Mdl01Bnr__base--text1,
+.Mdl03Bnr__base .Mdl01Bnr .Mdl01Bnr__base--text2,
+.Mdl01Bnr .Mdl03Bnr__base .Mdl01Bnr__base--text2,
+.Mdl03Bnr__base .Mdl01Bnr .Mdl01Bnr__base--button,
+.Mdl01Bnr .Mdl03Bnr__base .Mdl01Bnr__base--button,
+.Mdl03Bnr__base .Mdl02Bnr__base--text1,
+.Mdl03Bnr__base .Mdl02Bnr__base--text2,
+.Mdl03Bnr__base .Mdl03Bnr__base--text1,
+.Mdl03Bnr__base .Mdl03Bnr__base--text2,
+.Mdl03Bnr__base .Mdl04Bnr__base--text1,
+.Mdl03Bnr__base .Mdl04Bnr__base--text2 {
+  padding: 20px;
+  text-align: center;
+}
+
+.Mdl03Bnr__base--text1 {
+  font-size: 2.8em;
+}
+
+.Mdl03Bnr__base--text2 {
+  font-size: 1.5em;
+  top: 50%;
+}
+
+.Mdl04Bnr__base {
+  width: 100%;
+  height: 300px;
+  padding: 50px;
+}
+
+.Mdl04Bnr__base .Mdl01Bnr .Mdl01Bnr__base--text1,
+.Mdl01Bnr .Mdl04Bnr__base .Mdl01Bnr__base--text1,
+.Mdl04Bnr__base .Mdl01Bnr .Mdl01Bnr__base--text2,
+.Mdl01Bnr .Mdl04Bnr__base .Mdl01Bnr__base--text2,
+.Mdl04Bnr__base .Mdl01Bnr .Mdl01Bnr__base--button,
+.Mdl01Bnr .Mdl04Bnr__base .Mdl01Bnr__base--button,
+.Mdl04Bnr__base .Mdl02Bnr__base--text1,
+.Mdl04Bnr__base .Mdl02Bnr__base--text2,
+.Mdl04Bnr__base .Mdl03Bnr__base--text1,
+.Mdl04Bnr__base .Mdl03Bnr__base--text2,
+.Mdl04Bnr__base .Mdl04Bnr__base--text1,
+.Mdl04Bnr__base .Mdl04Bnr__base--text2 {
+  padding: 20px;
+  text-align: center;
+}
+
+.Mdl04Bnr__base--text1 {
+  font-size: 2.8em;
+}
+
+.Mdl04Bnr__base--text2 {
+  font-size: 1.5em;
+  top: 50%;
+}
+
