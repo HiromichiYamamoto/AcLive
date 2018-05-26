@@ -307,12 +307,18 @@ li {
   font-size: 20px;
 }
 
-.Mdl01Bnr .Mdl01Bnr__base--image {
+.Mdl01Bnr .Mdl01Bnr__base {
   width: 100vw;
   height: 100vh;
+  position: relative;
+}
+
+.Mdl01Bnr .Mdl01Bnr__base--image {
+  width: 100%;
+  height: 100%;
   background-image: url(/images/AnyCas_TOP1.jpg?f795cac7bce7a13c39d7efb5167f32ed);
   background-size: cover;
-  position: relative;
+  position: absolute;
 }
 
 .Mdl01Bnr .Mdl01Bnr__base .Mdl01Bnr__base--text1,
@@ -329,15 +335,18 @@ li {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   left: 50%;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .Mdl01Bnr .Mdl01Bnr__base--text1 {
   top: 45%;
-  font-size: 2.8em;
+  font-size: 4.5vw;
+  font-size: 4.5vh;
 }
 
 .Mdl01Bnr .Mdl01Bnr__base--text2 {
-  font-size: 1.5em;
+  font-size: 2.5vw;
+  font-size: 2.5vh;
   top: 50%;
 }
 
@@ -351,7 +360,8 @@ li {
   border-radius: 50px;
   -webkit-transition: .4s;
   transition: .4s;
-  font-size: 20px;
+  font-size: 2.5vw;
+  font-size: 2.5vh;
 }
 
 .Mdl01Bnr .Mdl01Bnr__base--button:hover {
