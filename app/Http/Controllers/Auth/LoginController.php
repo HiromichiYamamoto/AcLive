@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
@@ -36,4 +37,18 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+    public function showLoginForm(Request $request)
+    {
+
+//        $request->session()->put('back_url', URL::previous());
+//
+//        View::share('title', Title::get('login'));
+//        View::share('description', Description::get('login'));
+//        View::share('attr_body_id', $this->getAttrId('pageID'));
+//        View::share('attr_body_class', $this->getAttrClass('one-column-layout'));
+
+        return view('ac.auth.login');
+    }
+
 }
