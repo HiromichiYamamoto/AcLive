@@ -1,18 +1,30 @@
 /************************
  * header
  ***********************/
-#header {
-    background-color: $color-black;
-    opacity: 0.1;
-}
-.header__wrapper {
-    &--nav {
+
+.HeadBef {
+    &__wrap {
         height: 50px;
-        padding: 0 20px;
-        &-title {
-            color: #FFFFFF;
-            line-height: 50px;
-            font-size: 20px;
+        &--inner {
+            background-color: $color-black;
+            z-index: 9;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            &--nav {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 20px;
+                &-title {
+                    color: #FFFFFF;
+                    line-height: 50px;
+                    font-size: 20px;
+                }
+                &-login {
+                    color: #FFFFFF;
+                    line-height: 50px;
+                }
+            }
         }
     }
 }

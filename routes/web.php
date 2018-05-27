@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('ac/top/index');
-});
+//Route::get('/', function () {return view('ac/top/index');});
+
+Route::any('/', 'TopController@index')->name('top');
+
+Auth::routes();

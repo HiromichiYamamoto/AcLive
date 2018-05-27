@@ -1,53 +1,16 @@
 //TOPログイン前
 
-//ヘッダー
-.HeadBef {
-    &__wrap {
-        max-width: 1024px;
-        height: 50px;
-        &--inner {
-            background-color: $color-black;
-            z-index: 9;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            &--nav {
-                display: flex;
-                justify-content: space-between;
-                padding: 0 20px;
-                &-title {
-                    color: #FFFFFF;
-                    line-height: 50px;
-                    font-size: 20px;
-                }
-                &-login {
-                    color: #FFFFFF;
-                    line-height: 50px;
-                    font-size: 20px;
-                }
-            }
-        }
-    }
-}
-
-//.headBef::after {
-//    content: "";
-//    z-index: 2;
-//    position: fixed;
-//    top: 0;
-//    width: 100%;
-//    height: 96px;
-//    background-color: rgba(0, 222, 120, 0.97);
-//}
-
 .Mdl01Bnr {
     .Mdl01Bnr__base {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
         &--image {
-            width: 100vw;
-            height: 100vh;
+            width: 100%;
+            height: 100%;
             background-image: url("../../../../../public/common/img/top/AnyCas_TOP1.jpg");
-            background-size:cover;
-            position: relative;
+            background-size: cover;
+            position: absolute;
         }
         //テキスト中央揃え用------
         %--text {
@@ -57,16 +20,20 @@
             -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
             left: 50%;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
         }
         //--------------------
         &--text1 {
             @extend %--text;
             top: 45%;
-            font-size: 2.8em;
+            //font-size: 2.8em;
+            font-size: 4.5vw;
+            font-size: 4.5vh;
         }
         &--text2 {
             @extend %--text;
-            font-size: 1.5em;
+            font-size: 2.5vw;
+            font-size: 2.5vh;
             top: 50%;
         }
         &--button {
@@ -79,7 +46,8 @@
             background-color: rgba(0,0,0,0);
             border-radius: 50px;
             transition: .4s;
-            font-size: 20px;
+            font-size: 2.5vw;
+            font-size: 2.5vh;
         }
         &--button:hover {
             background: #67c5ff;

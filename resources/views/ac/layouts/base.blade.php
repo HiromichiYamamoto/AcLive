@@ -6,17 +6,28 @@
     <title>AnyCasLive</title>
     <script src="{{ url('/common') }}/js/common.js"></script>
     <link media="all" type="text/css" rel="stylesheet" href="{{ url('/common') }}/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/YOUR-fontello-icon/css/fontello.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1,mini
+    mum-scale=1.0,user-scalable=no">
 </head>
 
 <body>
-    <div>
-        {{--<header id="header">--}}
-            {{--<div class="header__wrapper">--}}
-                {{--<nav class="header__wrapper--nav">--}}
-                    {{--<div class="header__wrapper--nav-title">AnyCas</div>--}}
-                {{--</nav>--}}
-            {{--</div>--}}
-        {{--</header>--}}
+    <div class="container">
+        <header class="HeadBef">
+            <div class="HeadBef__wrap">
+                <div class="HeadBef__wrap--inner">
+                    <nav class="HeadBef__wrap--inner--nav">
+                        <div class="HeadBef__wrap--inner--nav-title">AnyCas</div>
+                        @if(Auth::user())
+                            <div class="HeadBef__wrap--inner--nav-login">マイページ</div>
+                        @else
+                            <a href="{{ route('login') }}" title="ログインページへ"
+                               class="HeadBef__wrap--inner--nav-login">ログイン</a>
+                        @endif
+                    </nav>
+                </div>
+            </div>
+        </header>
 
         @yield('content')
         <!-- 非共通ページコンテンツ END -->
