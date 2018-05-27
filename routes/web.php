@@ -16,6 +16,3 @@
 Route::any('/', 'TopController@index')->name('top');
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('login',  'Auth\LoginController@showLoginForm')->name('login');

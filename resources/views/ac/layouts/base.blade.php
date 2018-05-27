@@ -6,12 +6,13 @@
     <title>AnyCasLive</title>
     <script src="{{ url('/common') }}/js/common.js"></script>
     <link media="all" type="text/css" rel="stylesheet" href="{{ url('/common') }}/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/YOUR-fontello-icon/css/fontello.css">
     <meta name="viewport" content="width=device-width, initial-scale=1,mini
     mum-scale=1.0,user-scalable=no">
 </head>
 
 <body>
-    <div>
+    <div class="container">
         <header class="HeadBef">
             <div class="HeadBef__wrap">
                 <div class="HeadBef__wrap--inner">

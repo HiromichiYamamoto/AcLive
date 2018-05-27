@@ -233,47 +233,21 @@ li {
   font-size: inherit;
 }
 
+.wrapper {
+  padding: 40px;
+}
+
+.Title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 /************************
  * header
  ***********************/
 
-#header {
-  background-color: #000;
-  opacity: 0.1;
-}
-
-.header__wrapper--nav {
-  height: 50px;
-  padding: 0 20px;
-}
-
-.header__wrapper--nav-title {
-  color: #FFFFFF;
-  line-height: 50px;
-  font-size: 20px;
-}
-
-/************************
- * footer
- ***********************/
-
-.Footer__wrap {
-  background-color: #000;
-  height: 100px;
-}
-
-.Footer__wrap--nav {
-  padding: 0 20px;
-}
-
-.Footer__wrap--nav-text1 {
-  color: #FFF;
-  text-align: center;
-  padding: 40px;
-}
-
 .HeadBef__wrap {
-  max-width: 1024px;
   height: 50px;
 }
 
@@ -304,7 +278,93 @@ li {
 .HeadBef__wrap--inner--nav-login {
   color: #FFFFFF;
   line-height: 50px;
-  font-size: 20px;
+}
+
+/************************
+ * footer
+ ***********************/
+
+.Footer__wrap {
+  background-color: #000;
+  height: 100px;
+}
+
+.Footer__wrap--nav {
+  padding: 0 20px;
+}
+
+.Footer__wrap--nav-text1 {
+  color: #FFF;
+  text-align: center;
+  padding: 40px;
+}
+
+.LogWrap {
+  width: calc(100vw/3.5);
+  margin: 0 auto;
+}
+
+.LogWrap__line {
+  margin: 0 auto 20px auto;
+  height: 45px;
+}
+
+.LogWrap__line:hover {
+  opacity: 0.7;
+  color: white;
+}
+
+.LogWrap__line--btn {
+  background-color: #60C93C;
+  color: #FFF;
+  line-height: 44px;
+  width: calc(100vw/3.5);
+  position: absolute;
+  text-align: center;
+}
+
+.LogWrap__line--btn-icon {
+  content: url(/images/sns_line.png?907969c6093021bfbb22da4ac9cd533a);
+  font-size: 1.75em;
+  padding-top: 1px;
+  width: 44px;
+  position: relative;
+}
+
+.LogWrap__line--btn-icon:hover {
+  opacity: 0.7;
+  color: white;
+}
+
+.LogWrap__fb {
+  margin: 0 auto 20px auto;
+  height: 45px;
+}
+
+.LogWrap__fb:hover {
+  opacity: 0.7;
+  color: white;
+}
+
+.LogWrap__fb--btn {
+  background-color: #365092;
+  color: #FFF;
+  line-height: 44px;
+  width: calc(100vw/3.5);
+  position: absolute;
+  text-align: center;
+}
+
+.LogWrap__fb--btn-icon {
+  content: url(/images/sns_fb.png?3ee2b2f4f2b529232d4c164897bbf4c4);
+  font-size: 1.75em;
+  padding-top: 1px;
+  width: 44px;
+  position: relative;
+}
+
+.panel-body {
+  padding: 20px 0;
 }
 
 .Mdl01Bnr .Mdl01Bnr__base {
