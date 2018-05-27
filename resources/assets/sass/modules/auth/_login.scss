@@ -1,0 +1,58 @@
+.LogWrap {
+    width: calc(100vw/3.5);
+    margin: 0 auto;
+    &__line {
+        margin: 0 auto 20px auto;
+        height: 45px;
+        &:hover {
+            opacity: 0.7;
+            color: white;
+        }
+        &--btn {
+            background-color: #60C93C;
+            color: $color-white;
+            line-height: 44px;
+            width: calc(100vw/3.5);
+            position: absolute;
+            text-align: center;
+            &-icon {
+                content: url("../../../../../public/common/img/icon/sns_line.png");
+                font-size: 1.75em;
+                padding-top: 1px;
+                width: 44px;
+                position: relative;
+                &:hover {
+                    opacity: 0.7;
+                    color: white;
+                }
+            }
+        }
+    }
+    &__fb {
+        margin: 0 auto 20px auto;
+        height: 45px;
+        &:hover {
+            opacity: 0.7;
+            color: white;
+        }
+        &--btn {
+            background-color: #365092;
+            color: $color-white;
+            line-height: 44px;
+            width: calc(100vw/3.5);
+            position: absolute;
+            text-align: center;
+            &-icon {
+                content: url("../../../../../public/common/img/icon/sns_fb.png");
+                font-size: 1.75em;
+                padding-top: 1px;
+                width: 44px;
+                position: relative;
+            }
+        }
+    }
+}
+
+.panel-body {
+    padding: 20px 0;
+}
