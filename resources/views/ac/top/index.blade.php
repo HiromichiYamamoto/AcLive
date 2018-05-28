@@ -16,24 +16,21 @@
             <div class="Mdl02Bnr">
                 <div class="Mdl02Bnr__base">
                     <div class="Mdl02Bnr__base--text1">Liveパフォーマンス</div>
-                    <div class="Mdl02Bnr__base--text2">各分野のパフォーマによるパフォーマンスを
-                        ライブ配信を通じて提供できるサービス。</div>
+                    <div class="Mdl02Bnr__base--text2">各分野のパフォーマによるパフォーマンスをライブ配信を通じて提供できるサービス。</div>
                 </div>
             </div>
 
             <div class="Mdl03Bnr">
                 <div class="Mdl03Bnr__base">
                     <div class="Mdl03Bnr__base--text1">Liveレッスン</div>
-                    <div class="Mdl03Bnr__base--text2">各分野のパフォーマによるオンラインレッスンを
-                        ライブチャット「ハングアウト」を通じて受講できるサービス。</div>
+                    <div class="Mdl03Bnr__base--text2">各分野のパフォーマによるオンラインレッスンをライブチャット「ハングアウト」を通じて受講できるサービス。</div>
                 </div>
             </div>
 
             <div class="Mdl04Bnr">
                 <div class="Mdl04Bnr__base">
                     <div class="Mdl04Bnr__base--text1">キャスティング</div>
-                    <div class="Mdl04Bnr__base--text2">リアルでパフォーマを呼びイベントやレクチャーを
-                        行えるマッチングサービス。</div>
+                    <div class="Mdl04Bnr__base--text2">リアルでパフォーマを呼びイベントやレクチャーを行えるマッチングサービス。</div>
                 </div>
             </div>
         </div>

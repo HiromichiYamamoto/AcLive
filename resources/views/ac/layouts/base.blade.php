@@ -21,8 +21,7 @@
                         @if(Auth::user())
                             <div class="HeadBef__wrap--inner--nav-login">マイページ</div>
                         @else
-                            <a href="{{ route('login') }}" title="ログインページへ"
-                               class="HeadBef__wrap--inner--nav-login">ログイン</a>
+                            <a href="{{ route('login') }}" title="ログインページへ" class="HeadBef__wrap--inner--nav-login">ログイン</a>
                         @endif
                     </nav>
                 </div>
