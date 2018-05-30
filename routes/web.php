@@ -16,3 +16,5 @@
 Route::any('/', 'TopController@index')->name('top');
 
 Auth::routes();
+
+Route::any('register/input',     'Auth\RegisterController@input')->name('register.input');

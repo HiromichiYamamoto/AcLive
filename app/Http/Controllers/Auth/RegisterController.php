@@ -73,4 +73,8 @@ class RegisterController extends Controller
     public function showRegistrationForm() {
         return view('ac.auth.register');
     }
+
+    public function input() {
+        return view('ac.auth.entry');
+    }
 }
