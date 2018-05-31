@@ -1,8 +1,8 @@
-@extends('ac.layouts.wrap')
+@extends('ac.layouts.base')
 
 @section('content')
     <section id="section-1">
-        <div class="wrapper">
+        <div class="Befwrapper">
 
             <div class="Mdl01Bnr">
                 <div class="Mdl01Bnr__wrap">

@@ -16,5 +16,10 @@
 Route::any('/', 'TopController@index')->name('top');
 
 Auth::routes();
+Route::any('register', 'Auth\RegisterController@index')->name('register');
+Route::any('register/entry', 'Auth\RegisterController@entry')->name('register.entry');
+Route::post('register/confirm', 'Auth\RegisterController@confirm')->name('register.input');
+Route::post('register/confirm', 'Auth\RegisterController@confirm')->name('register.input');
 
-Route::any('register/input',     'Auth\RegisterController@input')->name('register.input');
+Route::get('/login/{provider}', 'Auth\SocialAccountController@redirectToProvider');
+Route::get('/entry/{provider}/callback', 'Auth\SocialAccountController@handleProviderCallback');

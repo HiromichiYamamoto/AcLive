@@ -233,6 +233,24 @@ li {
   font-size: inherit;
 }
 
+dl {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+dt {
+  clear: both;
+  float: left;
+  width: 25%;
+  font-weight: bold;
+}
+
+dd {
+  float: right;
+  width: 75%;
+}
+
 .wrapper {
   padding: 40px;
 }
@@ -368,8 +386,12 @@ li {
   padding: 20px 0;
 }
 
-.EnTitle {
+.InputTitle {
   font-weight: bold;
+}
+
+.InputForm dl {
+  margin: 30px 0;
 }
 
 .Mdl01Bnr .Mdl01Bnr__wrap {

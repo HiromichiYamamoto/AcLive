@@ -1,10 +1,10 @@
 
-.EnTitle {
+.InputTitle {
     font-weight: bold;
 }
-.En {
-    &__block {
-
+.InputForm {
+    & dl {
+        margin: 30px 0;
     }
 
 }

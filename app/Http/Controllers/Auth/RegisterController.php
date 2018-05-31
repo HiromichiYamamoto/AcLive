@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\User;
 use App\Http\Controllers\Controller;
+use App\User;
+use Auth;
+use Session;
+use Illuminate\Http\Request;
+use App\Http\Requests\RegisterInputRequest;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -29,6 +33,15 @@ class RegisterController extends Controller
      * @var string
      */
     protected $redirectTo = '/';
+
+    protected $input_param = [
+        'nickname' => '',
+        'profile' => '',
+        'avatar' => '',
+        'token' => '',
+    ];
+
+    protected $registUser;
 
     /**
      * Create a new controller instance.
@@ -61,8 +74,7 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    protected function create(array $data)
-    {
+    protected function create(array $data) {
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
@@ -70,11 +82,20 @@ class RegisterController extends Controller
         ]);
     }
 
-    public function showRegistrationForm() {
+    public function index() {
         return view('ac.auth.register');
     }
 
-    public function input() {
+    public function entry(RegisterInputRequest $request) {
+
         return view('ac.auth.entry');
+    }
+
+    public function confirm() {
+        return view('ac.auth.confirm');
+    }
+
+    public function complete() {
+        return view('ac.auth.complete');
     }
 }
