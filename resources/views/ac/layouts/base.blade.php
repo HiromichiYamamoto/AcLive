@@ -6,23 +6,23 @@
     <title>AnyCasLive</title>
     <script src="{{ url('/common') }}/js/common.js"></script>
     <link media="all" type="text/css" rel="stylesheet" href="{{ url('/common') }}/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/YOUR-fontello-icon/css/fontello.css">
     <meta name="viewport" content="width=device-width, initial-scale=1,mini
     mum-scale=1.0,user-scalable=no">
 </head>
 
 <body>
-    <div class="container">
-        <header class="HeadBef">
-            <div class="HeadBef__wrap">
-                <div class="HeadBef__wrap--inner">
-                    <nav class="HeadBef__wrap--inner--nav">
-                        <div class="HeadBef__wrap--inner--nav-title">AnyCas</div>
+    <div id="container">
+
+        <header class="Head">
+            <div class="Head__wrap">
+                <div class="Head__wrap--inner">
+                    <nav class="Head__wrap--inner--nav">
+                        <div class="Head__wrap--inner--nav-title">AnyCas</div>
                         @if(Auth::user())
-                            <div class="HeadBef__wrap--inner--nav-login">マイページ</div>
+                            <div class="Head__wrap--inner--nav-login">マイページ</div>
+                            <div class="Head__wrap--inner--nav-login link"><a href="{{route('logout')}}">ログアウトする</a></div>
                         @else
-                            <a href="{{ route('login') }}" title="ログインページへ"
-                               class="HeadBef__wrap--inner--nav-login">ログイン</a>
+                            <a href="{{ route('login') }}" title="ログインページへ" class="Head__wrap--inner--nav-login">ログイン</a>
                         @endif
                     </nav>
                 </div>
@@ -30,15 +30,15 @@
         </header>
 
         @yield('content')
-        <!-- 非共通ページコンテンツ END -->
 
-        <footer class="Footer">
-            <div class="Footer__wrap">
-                <div class="Footer__wrap--nav">
-                    <div class="Footer__wrap--nav-text1"> AnyCas Japan CO.,LTD . All Rights Reserved</div>
+        <footer class="Foot">
+            <div class="Foot__wrap">
+                <div class="Foot__wrap--nav">
+                    <div class="Foot__wrap--nav-text1"> AnyCas Japan CO.,LTD . All Rights Reserved</div>
                 </div>
             </div>
         </footer>
+
     </div>
 </body>
 

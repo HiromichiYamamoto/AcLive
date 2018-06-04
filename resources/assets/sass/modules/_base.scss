@@ -46,6 +46,23 @@ li {
     font-size: inherit;
 }
 
+//登録フォーム用
+dl {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+dt {
+    clear: both;
+    float: left;
+    width: 25%;
+    font-weight: bold;
+}
+dd {
+    float: right;
+    width: 75%;
+}
+
 .wrapper {
     padding: 40px;
 }

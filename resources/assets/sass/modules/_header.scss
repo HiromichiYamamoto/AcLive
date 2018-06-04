@@ -2,7 +2,7 @@
  * header
  ***********************/
 
-.HeadBef {
+.Head {
     &__wrap {
         height: 50px;
         &--inner {
@@ -27,4 +27,7 @@
             }
         }
     }
+}
+.link {
+    color: $color-white;
 }
