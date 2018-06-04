@@ -1,15 +1,18 @@
 <?php
 
 namespace App\Models;
-use DB;
+//use DB;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Session\Store;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Auth\Authenticatable;
+use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 
-class User extends Model
+
+class User extends Model implements AuthenticatableContract
 {
-
-    protected $table = 'm_users';
+    use Authenticatable;
+    protected $table = 'users';
 
     protected $guarded = ['id'];
 
@@ -18,7 +21,7 @@ class User extends Model
     }
 
     public function accounts() {
-        return $this->hasMany('App\LinkedSocialAccount');
+        return $this->hasMany('App\Models\LinkedSocialAccount');
     }
 
 }

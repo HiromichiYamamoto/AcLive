@@ -15,9 +15,10 @@ class CreateLinkedSocialAccountsTable extends Migration
     {
         Schema::create('linked_social_accounts', function (Blueprint $table) {
             $table->increments('id');
-            $table->bigInteger('user_id');
-            $table->string('provider_name');
-            $table->string('provider_id');
+            $table->bigInteger('user_id')->nullable();
+            $table->string('provider');
+            $table->string('provider_user_id');
+            $table->text('provider_access_token')->nullable();
             $table->timestamps();
         });
     }

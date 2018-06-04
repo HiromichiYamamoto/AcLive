@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\User;
+use App\Models\User;
 use Auth;
 use Session;
 use Illuminate\Http\Request;
@@ -87,7 +87,6 @@ class RegisterController extends Controller
     }
 
     public function entry(RegisterInputRequest $request) {
-
         return view('ac.auth.entry');
     }
 

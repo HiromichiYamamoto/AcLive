@@ -20,6 +20,7 @@
                         <div class="Head__wrap--inner--nav-title">AnyCas</div>
                         @if(Auth::user())
                             <div class="Head__wrap--inner--nav-login">マイページ</div>
+                            <div class="Head__wrap--inner--nav-login link"><a href="{{route('logout')}}">ログアウトする</a></div>
                         @else
                             <a href="{{ route('login') }}" title="ログインページへ" class="Head__wrap--inner--nav-login">ログイン</a>
                         @endif
