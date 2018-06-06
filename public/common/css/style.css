@@ -253,6 +253,8 @@ dd {
 
 .wrapper {
   padding: 40px;
+  height: 100%;
+  width: 100%;
 }
 
 .Title {
@@ -272,7 +274,6 @@ dd {
 .Head__wrap--inner {
   background-color: #000;
   z-index: 9;
-  position: fixed;
   top: 0;
   width: 100%;
 }
@@ -290,12 +291,16 @@ dd {
 .Head__wrap--inner--nav-title {
   color: #FFFFFF;
   line-height: 50px;
-  font-size: 20px;
+  font-size: 2em;
 }
 
 .Head__wrap--inner--nav-login {
   color: #FFFFFF;
   line-height: 50px;
+}
+
+.link {
+  color: #FFF;
 }
 
 /************************
@@ -396,16 +401,10 @@ dd {
 
 .Mdl01Bnr .Mdl01Bnr__wrap {
   min-width: 100vw;
-  height: 100vh;
-  position: relative;
-}
-
-.Mdl01Bnr .Mdl01Bnr__wrap--image {
-  min-width: 100%;
-  height: 100%;
-  background-image: url(/images/AnyCas_TOP1.jpg?f795cac7bce7a13c39d7efb5167f32ed);
+  height: 650px;
+  background: url(/images/AnyCas_TOP1.jpg?f795cac7bce7a13c39d7efb5167f32ed) no-repeat center center;
   background-size: cover;
-  position: absolute;
+  position: relative;
 }
 
 .Mdl01Bnr .Mdl01Bnr__wrap .Mdl01Bnr__wrap--text1,
@@ -548,5 +547,50 @@ dd {
 .Mdl04Bnr__wrap--text2 {
   font-size: 1.5em;
   top: 50%;
+}
+
+.TopMain {
+  min-width: 100vw;
+  height: 650px;
+  background: url(/images/Top-BackCover.jpg?4a63dbc8ebb4cac95799c6e6e9425237) no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.TopMainWrap {
+  padding: 40px;
+  height: 100%;
+}
+
+.TopMainBox {
+  position: absolute;
+}
+
+.TopMainBox__menu li {
+  display: inline;
+}
+
+.TopMainBox__menu li p {
+  margin-bottom: 40px;
+  color: #FFF;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.TopMainBox__menu-text a:hover {
+  color: #69DB86;
+}
+
+.TopSub {
+  height: 300px;
+}
+
+.TopSub2 {
+  height: 100px;
+  background-color: #000;
+}
+
+.TopFoot {
+  height: 650px;
 }
 

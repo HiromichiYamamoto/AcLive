@@ -12,23 +12,30 @@
 
 <body>
     <div id="container">
-
-        <header class="Head">
-            <div class="Head__wrap">
-                <div class="Head__wrap--inner">
-                    <nav class="Head__wrap--inner--nav">
-                        <div class="Head__wrap--inner--nav-title">AnyCas</div>
-                        @if(Auth::user())
+        @if(Auth::user())
+            <header class="Head">
+                <div class="Head__wrap">
+                    <div class="Head__wrap--inner">
+                        <nav class="Head__wrap--inner--nav">
+                            <div class="Head__wrap--inner--nav-title">AnyCas</div>
                             <div class="Head__wrap--inner--nav-login">マイページ</div>
                             <div class="Head__wrap--inner--nav-login link"><a href="{{route('logout')}}">ログアウトする</a></div>
-                        @else
-                            <a href="{{ route('login') }}" title="ログインページへ" class="Head__wrap--inner--nav-login">ログイン</a>
-                        @endif
-                    </nav>
+                        </nav>
+                    </div>
                 </div>
-            </div>
-        </header>
-
+            </header>
+        @else
+            <header class="Head">
+                <div class="Head__wrap">
+                    <div class="Head__wrap--inner">
+                        <nav class="Head__wrap--inner--nav">
+                            <div class="Head__wrap--inner--nav-title">AnyCas</div>
+                            <a href="{{ route('login') }}" title="ログインページへ" class="Head__wrap--inner--nav-login">ログイン</a>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+        @endif
         @yield('content')
 
         <footer class="Foot">

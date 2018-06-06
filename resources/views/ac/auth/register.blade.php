@@ -1,8 +1,7 @@
 @extends('ac.layouts.base')
 
 @section('content')
-
-    <section class="container">
+    <section class="section-1">
         <div class="wrapper">
 
             <h2 class="Title">新規会員登録</h2>

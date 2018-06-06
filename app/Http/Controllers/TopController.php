@@ -8,10 +8,12 @@ use Auth;
 class TopController extends Controller
 {
     public function index() {
+
         if(Auth::user()) {
             return view('ac.top.index_login');
         } else {
             return view('ac.top.index');
         }
     }
+
 }
