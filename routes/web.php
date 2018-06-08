@@ -20,10 +20,13 @@ Route::post('register/confirm', 'Auth\RegisterController@confirm')->name('regist
 Route::post('register/confirm', 'Auth\RegisterController@confirm')->name('register.input');
 
 //Line
-Route::get('/login/line', 'Auth\SocialController@getLineAuth');
-Route::get('/register/entry', 'Auth\SocialController@getLineAuthCallback');
+Route::get('login/line', 'Auth\SocialController@getLineAuth');
+Route::get('entry/line', 'Auth\SocialController@getLineAuthCallback');
 //facebook
 //Route::get('/login/facebook', 'Auth\SocialController@getFacebookAuth');
 //Route::get('/login/facebook/callback', 'Auth\SocialController@getFacebookAuthCallback');
 //logout
 Route::get('logout', 'Auth\LoginController@logout')->name('logout');
+
+//profile
+Route::any('profile', 'ProfileController@index')->name('profile');

@@ -3,27 +3,38 @@
  ***********************/
 
 .Head {
-    &__wrap {
-        height: 50px;
-        &--inner {
-            background-color: $color-black;
-            z-index: 9;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            &--nav {
-                display: flex;
-                justify-content: space-between;
-                padding: 0 20px;
-                &-title {
-                    color: #FFFFFF;
-                    line-height: 50px;
-                    font-size: 20px;
-                }
-                &-login {
-                    color: #FFFFFF;
-                    line-height: 50px;
-                }
+    height: 50px;
+    &__inner {
+        background-color: $color-black;
+        &--nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            &-title {
+                color: $color-white;
+                line-height: 50px;
+                font-size: 2em;
+            }
+            &-login {
+                color: $color-white;
+                line-height: 50px;
+            }
+            &-avatar {
+                display:inline-block;
+                line-height: 50px;
+                padding: 3px 0;
+                width: 47px;
+                height: 47px;
+                background: #fff url("../../../../public/common/img/icon/faq-regist.png") center center no-repeat;
+                background-origin: border-box;
+                background-size: cover;
+                border-radius: 50%;
+                border: solid 2px $color-black;
+            }
+            &-nickname {
+                color: $color-white;
+                float: right;
+                line-height: 50px;
             }
         }
     }

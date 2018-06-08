@@ -1,7 +1,7 @@
 @extends('ac.layouts.base')
 
 @section('content')
-<section id="section-1">
+<section class="section-1">
     <div class="wrapper">
 
         <div class="LogWrap">
