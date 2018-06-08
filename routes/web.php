@@ -27,3 +27,6 @@ Route::get('entry/line', 'Auth\SocialController@getLineAuthCallback');
 //Route::get('/login/facebook/callback', 'Auth\SocialController@getFacebookAuthCallback');
 //logout
 Route::get('logout', 'Auth\LoginController@logout')->name('logout');
+
+//profile
+Route::any('profile', 'ProfileController@index')->name('profile');

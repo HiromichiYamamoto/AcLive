@@ -267,18 +267,15 @@ dd {
  * header
  ***********************/
 
-.Head__wrap {
+.Head {
   height: 50px;
 }
 
-.Head__wrap--inner {
+.Head__inner {
   background-color: #000;
-  z-index: 9;
-  top: 0;
-  width: 100%;
 }
 
-.Head__wrap--inner--nav {
+.Head__inner--nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,14 +285,33 @@ dd {
   padding: 0 20px;
 }
 
-.Head__wrap--inner--nav-title {
-  color: #FFFFFF;
+.Head__inner--nav-title {
+  color: #FFF;
   line-height: 50px;
   font-size: 2em;
 }
 
-.Head__wrap--inner--nav-login {
-  color: #FFFFFF;
+.Head__inner--nav-login {
+  color: #FFF;
+  line-height: 50px;
+}
+
+.Head__inner--nav-avatar {
+  display: inline-block;
+  line-height: 50px;
+  padding: 3px 0;
+  width: 47px;
+  height: 47px;
+  background: #fff url(/images/faq-regist.png?93598e1344ab9c741dcdf78420ea211d) center center no-repeat;
+  background-origin: border-box;
+  background-size: cover;
+  border-radius: 50%;
+  border: solid 2px #000;
+}
+
+.Head__inner--nav-nickname {
+  color: #FFF;
+  float: right;
   line-height: 50px;
 }
 
@@ -307,17 +323,17 @@ dd {
  * footer
  ***********************/
 
-.Foot__wrap {
+.Foot {
   background-color: #000;
   width: 100%;
   height: 100px;
 }
 
-.Foot__wrap--nav {
+.Foot__nav {
   padding: 0 20px;
 }
 
-.Foot__wrap--nav-text1 {
+.Foot__nav-text1 {
   color: #FFF;
   text-align: center;
   padding: 40px;

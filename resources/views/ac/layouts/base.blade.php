@@ -14,23 +14,30 @@
     <div id="container">
         @if(Auth::user())
             <header class="Head">
-                <div class="Head__wrap">
-                    <div class="Head__wrap--inner">
-                        <nav class="Head__wrap--inner--nav">
-                            <div class="Head__wrap--inner--nav-title">AnyCas</div>
-                            <div class="Head__wrap--inner--nav-login">マイページ</div>
-                            <div class="Head__wrap--inner--nav-login link"><a href="{{route('logout')}}">ログアウトする</a></div>
+                <div class="Headrap">
+                    <div class="Head__inner">
+                        <nav class="Head__inner--nav">
+                            <div class="Head__inner--nav-title">AnyCas</div>
+                            <div class="Head__inner--nav-login link"><a href="{{route('logout')}}">ログアウトする</a></div>
+                            <a href="{{ route('profile') }}" class="Head__inner--nav-login" title="マイページへ">
+                                @if($navData['userInfo']['avatar'])
+                                    <div class="Head__inner--nav-avatar" style="background-image: url('{{ $navData['userInfo']['avatar'] }}');"></div>
+                                @else
+                                    <div class="Head__inner--nav-avatar"></div>
+                                @endif
+                                <div class="Head__inner--nav-nickname">{{ $navData['userInfo']['nickname'] }}</div>
+                            </a>
                         </nav>
                     </div>
                 </div>
             </header>
         @else
-            <header class="Head">
-                <div class="Head__wrap">
-                    <div class="Head__wrap--inner">
-                        <nav class="Head__wrap--inner--nav">
-                            <div class="Head__wrap--inner--nav-title">AnyCas</div>
-                            <a href="{{ route('login') }}" title="ログインページへ" class="Head__wrap--inner--nav-login">ログイン</a>
+            <header clss="Head">
+                <div class="HeadWrap">
+                    <div class="Head__inner">
+                        <nav class="Head__inner--nav">
+                            <div class="Head__inner--nav-title">AnyCas</div>
+                            <a href="{{ route('login') }}" title="ログインページへ" class="Head__inner--nav-login">ログイン</a>
                         </nav>
                     </div>
                 </div>
@@ -39,9 +46,9 @@
         @yield('content')
 
         <footer class="Foot">
-            <div class="Foot__wrap">
-                <div class="Foot__wrap--nav">
-                    <div class="Foot__wrap--nav-text1"> AnyCas Japan CO.,LTD . All Rights Reserved</div>
+            <div class="FootWrap">
+                <div class="Foot__nav">
+                    <div class="Foot__nav-text1"> AnyCas Japan CO.,LTD . All Rights Reserved</div>
                 </div>
             </div>
         </footer>
