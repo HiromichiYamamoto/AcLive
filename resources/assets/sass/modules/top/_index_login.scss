@@ -1,0 +1,60 @@
+//ログイン後TOP画面
+
+//section1
+.TopMain {
+    min-width: 100vw;
+    height: 650px;
+    background: url("../../../../../public/common/img/top/Top-BackCover.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.TopMainWrap {
+    padding: 40px;
+    height: 100%;
+}
+.TopMainBox {
+    position: absolute;
+    &__menu {
+        & li {
+            display: inline;
+            & p {
+                margin-bottom: 40px;
+                color: $color-white;
+                font-size: 1.2em;
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+    &__live {
+        &--movie {
+
+        }
+
+    }
+    &__now {
+        &--icon {
+
+        }
+    }
+}
+.TopMainBox__menu-text a:hover {
+    color: #69DB86;
+}
+
+//section2
+.TopSub {
+    height: 300px;
+}
+
+//section3
+.TopSub2 {
+    height: 100px;
+    background-color: $color-black;
+}
+
+//section4
+.TopFoot {
+    height: 650px;
+    &__menu {
+    }
+}

@@ -1,13 +1,13 @@
 @extends('ac.layouts.base')
 
 @section('content')
-<div class="container">
-
+<section class="section-1">
     <div class="wrapper">
+
         <div class="LogWrap">
             <h2 class="Title LogWrap-title">ログイン</h2>
             <div class="LogWrap__line">
-                <a href="" class="LogWrap__line--btn">Lineでログイン・無料登録</a>
+                <a href="/login/line" class="LogWrap__line--btn">Lineでログイン・無料登録</a>
                 <div class="LogWrap__line--btn-icon"></div>
             </div>
             <div class="LogWrap__fb">
@@ -25,6 +25,7 @@
                 </div>
             <hr/>
         </div>
+
     </div>
-</div>
+</section>
 @endsection

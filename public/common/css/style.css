@@ -233,8 +233,28 @@ li {
   font-size: inherit;
 }
 
+dl {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+dt {
+  clear: both;
+  float: left;
+  width: 25%;
+  font-weight: bold;
+}
+
+dd {
+  float: right;
+  width: 75%;
+}
+
 .wrapper {
   padding: 40px;
+  height: 100%;
+  width: 100%;
 }
 
 .Title {
@@ -247,19 +267,15 @@ li {
  * header
  ***********************/
 
-.HeadBef__wrap {
+.Head {
   height: 50px;
 }
 
-.HeadBef__wrap--inner {
+.Head__inner {
   background-color: #000;
-  z-index: 9;
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
-.HeadBef__wrap--inner--nav {
+.Head__inner--nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,31 +285,55 @@ li {
   padding: 0 20px;
 }
 
-.HeadBef__wrap--inner--nav-title {
-  color: #FFFFFF;
+.Head__inner--nav-title {
+  color: #FFF;
   line-height: 50px;
-  font-size: 20px;
+  font-size: 2em;
 }
 
-.HeadBef__wrap--inner--nav-login {
-  color: #FFFFFF;
+.Head__inner--nav-login {
+  color: #FFF;
   line-height: 50px;
+}
+
+.Head__inner--nav-avatar {
+  display: inline-block;
+  line-height: 50px;
+  padding: 3px 0;
+  width: 47px;
+  height: 47px;
+  background: #fff url(/images/faq-regist.png?93598e1344ab9c741dcdf78420ea211d) center center no-repeat;
+  background-origin: border-box;
+  background-size: cover;
+  border-radius: 50%;
+  border: solid 2px #000;
+}
+
+.Head__inner--nav-nickname {
+  color: #FFF;
+  float: right;
+  line-height: 50px;
+}
+
+.link {
+  color: #FFF;
 }
 
 /************************
  * footer
  ***********************/
 
-.Footer__wrap {
+.Foot {
   background-color: #000;
+  width: 100%;
   height: 100px;
 }
 
-.Footer__wrap--nav {
+.Foot__nav {
   padding: 0 20px;
 }
 
-.Footer__wrap--nav-text1 {
+.Foot__nav-text1 {
   color: #FFF;
   text-align: center;
   padding: 40px;
@@ -367,29 +407,31 @@ li {
   padding: 20px 0;
 }
 
-.Mdl01Bnr .Mdl01Bnr__base {
-  width: 100vw;
-  height: 100vh;
+.InputTitle {
+  font-weight: bold;
+}
+
+.InputForm dl {
+  margin: 30px 0;
+}
+
+.Mdl01Bnr .Mdl01Bnr__wrap {
+  min-width: 100vw;
+  height: 650px;
+  background: url(/images/AnyCas_TOP1.jpg?f795cac7bce7a13c39d7efb5167f32ed) no-repeat center center;
+  background-size: cover;
   position: relative;
 }
 
-.Mdl01Bnr .Mdl01Bnr__base--image {
-  width: 100%;
-  height: 100%;
-  background-image: url(/images/AnyCas_TOP1.jpg?f795cac7bce7a13c39d7efb5167f32ed);
-  background-size: cover;
-  position: absolute;
-}
-
-.Mdl01Bnr .Mdl01Bnr__base .Mdl01Bnr__base--text1,
-.Mdl01Bnr .Mdl01Bnr__base .Mdl01Bnr__base--text2,
-.Mdl01Bnr .Mdl01Bnr__base .Mdl01Bnr__base--button,
-.Mdl01Bnr .Mdl01Bnr__base .Mdl02Bnr__base--text1,
-.Mdl01Bnr .Mdl01Bnr__base .Mdl02Bnr__base--text2,
-.Mdl01Bnr .Mdl01Bnr__base .Mdl03Bnr__base--text1,
-.Mdl01Bnr .Mdl01Bnr__base .Mdl03Bnr__base--text2,
-.Mdl01Bnr .Mdl01Bnr__base .Mdl04Bnr__base--text1,
-.Mdl01Bnr .Mdl01Bnr__base .Mdl04Bnr__base--text2 {
+.Mdl01Bnr .Mdl01Bnr__wrap .Mdl01Bnr__wrap--text1,
+.Mdl01Bnr .Mdl01Bnr__wrap .Mdl01Bnr__wrap--text2,
+.Mdl01Bnr .Mdl01Bnr__wrap .Mdl01Bnr__wrap--button,
+.Mdl01Bnr .Mdl01Bnr__wrap .Mdl02Bnr__wrap--text1,
+.Mdl01Bnr .Mdl01Bnr__wrap .Mdl02Bnr__wrap--text2,
+.Mdl01Bnr .Mdl01Bnr__wrap .Mdl03Bnr__wrap--text1,
+.Mdl01Bnr .Mdl01Bnr__wrap .Mdl03Bnr__wrap--text2,
+.Mdl01Bnr .Mdl01Bnr__wrap .Mdl04Bnr__wrap--text1,
+.Mdl01Bnr .Mdl01Bnr__wrap .Mdl04Bnr__wrap--text2 {
   position: absolute;
   color: #FFF;
   -webkit-transform: translate(-50%, -50%);
@@ -398,19 +440,19 @@ li {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-.Mdl01Bnr .Mdl01Bnr__base--text1 {
+.Mdl01Bnr .Mdl01Bnr__wrap--text1 {
   top: 45%;
   font-size: 4.5vw;
   font-size: 4.5vh;
 }
 
-.Mdl01Bnr .Mdl01Bnr__base--text2 {
+.Mdl01Bnr .Mdl01Bnr__wrap--text2 {
   font-size: 2.5vw;
   font-size: 2.5vh;
   top: 50%;
 }
 
-.Mdl01Bnr .Mdl01Bnr__base--button {
+.Mdl01Bnr .Mdl01Bnr__wrap--button {
   top: 58%;
   display: inline-block;
   padding: 0.3em 3.5em;
@@ -424,102 +466,147 @@ li {
   font-size: 2.5vh;
 }
 
-.Mdl01Bnr .Mdl01Bnr__base--button:hover {
+.Mdl01Bnr .Mdl01Bnr__wrap--button:hover {
   background: #67c5ff;
   color: white;
 }
 
-.Mdl02Bnr__base {
+.Mdl02Bnr__wrap {
   width: 100%;
   height: 300px;
   padding: 50px;
 }
 
-.Mdl02Bnr__base .Mdl01Bnr .Mdl01Bnr__base--text1,
-.Mdl01Bnr .Mdl02Bnr__base .Mdl01Bnr__base--text1,
-.Mdl02Bnr__base .Mdl01Bnr .Mdl01Bnr__base--text2,
-.Mdl01Bnr .Mdl02Bnr__base .Mdl01Bnr__base--text2,
-.Mdl02Bnr__base .Mdl01Bnr .Mdl01Bnr__base--button,
-.Mdl01Bnr .Mdl02Bnr__base .Mdl01Bnr__base--button,
-.Mdl02Bnr__base .Mdl02Bnr__base--text1,
-.Mdl02Bnr__base .Mdl02Bnr__base--text2,
-.Mdl02Bnr__base .Mdl03Bnr__base--text1,
-.Mdl02Bnr__base .Mdl03Bnr__base--text2,
-.Mdl02Bnr__base .Mdl04Bnr__base--text1,
-.Mdl02Bnr__base .Mdl04Bnr__base--text2 {
+.Mdl02Bnr__wrap .Mdl01Bnr .Mdl01Bnr__wrap--text1,
+.Mdl01Bnr .Mdl02Bnr__wrap .Mdl01Bnr__wrap--text1,
+.Mdl02Bnr__wrap .Mdl01Bnr .Mdl01Bnr__wrap--text2,
+.Mdl01Bnr .Mdl02Bnr__wrap .Mdl01Bnr__wrap--text2,
+.Mdl02Bnr__wrap .Mdl01Bnr .Mdl01Bnr__wrap--button,
+.Mdl01Bnr .Mdl02Bnr__wrap .Mdl01Bnr__wrap--button,
+.Mdl02Bnr__wrap .Mdl02Bnr__wrap--text1,
+.Mdl02Bnr__wrap .Mdl02Bnr__wrap--text2,
+.Mdl02Bnr__wrap .Mdl03Bnr__wrap--text1,
+.Mdl02Bnr__wrap .Mdl03Bnr__wrap--text2,
+.Mdl02Bnr__wrap .Mdl04Bnr__wrap--text1,
+.Mdl02Bnr__wrap .Mdl04Bnr__wrap--text2 {
   padding: 20px;
   text-align: center;
 }
 
-.Mdl02Bnr__base--text1 {
+.Mdl02Bnr__wrap--text1 {
   font-size: 2.8em;
 }
 
-.Mdl02Bnr__base--text2 {
+.Mdl02Bnr__wrap--text2 {
   font-size: 1.5em;
   top: 50%;
 }
 
-.Mdl03Bnr__base {
+.Mdl03Bnr__wrap {
   background-color: #F5F5F5;
   width: 100%;
   height: 300px;
   padding: 50px;
 }
 
-.Mdl03Bnr__base .Mdl01Bnr .Mdl01Bnr__base--text1,
-.Mdl01Bnr .Mdl03Bnr__base .Mdl01Bnr__base--text1,
-.Mdl03Bnr__base .Mdl01Bnr .Mdl01Bnr__base--text2,
-.Mdl01Bnr .Mdl03Bnr__base .Mdl01Bnr__base--text2,
-.Mdl03Bnr__base .Mdl01Bnr .Mdl01Bnr__base--button,
-.Mdl01Bnr .Mdl03Bnr__base .Mdl01Bnr__base--button,
-.Mdl03Bnr__base .Mdl02Bnr__base--text1,
-.Mdl03Bnr__base .Mdl02Bnr__base--text2,
-.Mdl03Bnr__base .Mdl03Bnr__base--text1,
-.Mdl03Bnr__base .Mdl03Bnr__base--text2,
-.Mdl03Bnr__base .Mdl04Bnr__base--text1,
-.Mdl03Bnr__base .Mdl04Bnr__base--text2 {
+.Mdl03Bnr__wrap .Mdl01Bnr .Mdl01Bnr__wrap--text1,
+.Mdl01Bnr .Mdl03Bnr__wrap .Mdl01Bnr__wrap--text1,
+.Mdl03Bnr__wrap .Mdl01Bnr .Mdl01Bnr__wrap--text2,
+.Mdl01Bnr .Mdl03Bnr__wrap .Mdl01Bnr__wrap--text2,
+.Mdl03Bnr__wrap .Mdl01Bnr .Mdl01Bnr__wrap--button,
+.Mdl01Bnr .Mdl03Bnr__wrap .Mdl01Bnr__wrap--button,
+.Mdl03Bnr__wrap .Mdl02Bnr__wrap--text1,
+.Mdl03Bnr__wrap .Mdl02Bnr__wrap--text2,
+.Mdl03Bnr__wrap .Mdl03Bnr__wrap--text1,
+.Mdl03Bnr__wrap .Mdl03Bnr__wrap--text2,
+.Mdl03Bnr__wrap .Mdl04Bnr__wrap--text1,
+.Mdl03Bnr__wrap .Mdl04Bnr__wrap--text2 {
   padding: 20px;
   text-align: center;
 }
 
-.Mdl03Bnr__base--text1 {
+.Mdl03Bnr__wrap--text1 {
   font-size: 2.8em;
 }
 
-.Mdl03Bnr__base--text2 {
+.Mdl03Bnr__wrap--text2 {
   font-size: 1.5em;
   top: 50%;
 }
 
-.Mdl04Bnr__base {
+.Mdl04Bnr__wrap {
   width: 100%;
   height: 300px;
   padding: 50px;
 }
 
-.Mdl04Bnr__base .Mdl01Bnr .Mdl01Bnr__base--text1,
-.Mdl01Bnr .Mdl04Bnr__base .Mdl01Bnr__base--text1,
-.Mdl04Bnr__base .Mdl01Bnr .Mdl01Bnr__base--text2,
-.Mdl01Bnr .Mdl04Bnr__base .Mdl01Bnr__base--text2,
-.Mdl04Bnr__base .Mdl01Bnr .Mdl01Bnr__base--button,
-.Mdl01Bnr .Mdl04Bnr__base .Mdl01Bnr__base--button,
-.Mdl04Bnr__base .Mdl02Bnr__base--text1,
-.Mdl04Bnr__base .Mdl02Bnr__base--text2,
-.Mdl04Bnr__base .Mdl03Bnr__base--text1,
-.Mdl04Bnr__base .Mdl03Bnr__base--text2,
-.Mdl04Bnr__base .Mdl04Bnr__base--text1,
-.Mdl04Bnr__base .Mdl04Bnr__base--text2 {
+.Mdl04Bnr__wrap .Mdl01Bnr .Mdl01Bnr__wrap--text1,
+.Mdl01Bnr .Mdl04Bnr__wrap .Mdl01Bnr__wrap--text1,
+.Mdl04Bnr__wrap .Mdl01Bnr .Mdl01Bnr__wrap--text2,
+.Mdl01Bnr .Mdl04Bnr__wrap .Mdl01Bnr__wrap--text2,
+.Mdl04Bnr__wrap .Mdl01Bnr .Mdl01Bnr__wrap--button,
+.Mdl01Bnr .Mdl04Bnr__wrap .Mdl01Bnr__wrap--button,
+.Mdl04Bnr__wrap .Mdl02Bnr__wrap--text1,
+.Mdl04Bnr__wrap .Mdl02Bnr__wrap--text2,
+.Mdl04Bnr__wrap .Mdl03Bnr__wrap--text1,
+.Mdl04Bnr__wrap .Mdl03Bnr__wrap--text2,
+.Mdl04Bnr__wrap .Mdl04Bnr__wrap--text1,
+.Mdl04Bnr__wrap .Mdl04Bnr__wrap--text2 {
   padding: 20px;
   text-align: center;
 }
 
-.Mdl04Bnr__base--text1 {
+.Mdl04Bnr__wrap--text1 {
   font-size: 2.8em;
 }
 
-.Mdl04Bnr__base--text2 {
+.Mdl04Bnr__wrap--text2 {
   font-size: 1.5em;
   top: 50%;
+}
+
+.TopMain {
+  min-width: 100vw;
+  height: 650px;
+  background: url(/images/Top-BackCover.jpg?4a63dbc8ebb4cac95799c6e6e9425237) no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.TopMainWrap {
+  padding: 40px;
+  height: 100%;
+}
+
+.TopMainBox {
+  position: absolute;
+}
+
+.TopMainBox__menu li {
+  display: inline;
+}
+
+.TopMainBox__menu li p {
+  margin-bottom: 40px;
+  color: #FFF;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.TopMainBox__menu-text a:hover {
+  color: #69DB86;
+}
+
+.TopSub {
+  height: 300px;
+}
+
+.TopSub2 {
+  height: 100px;
+  background-color: #000;
+}
+
+.TopFoot {
+  height: 650px;
 }
 

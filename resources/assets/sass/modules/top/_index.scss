@@ -1,17 +1,12 @@
 //TOPログイン前
 
 .Mdl01Bnr {
-    .Mdl01Bnr__base {
-        width: 100vw;
-        height: 100vh;
+    .Mdl01Bnr__wrap {
+        min-width: 100vw;
+        height: 650px;
+        background: url("../../../../../public/common/img/top/AnyCas_TOP1.jpg")no-repeat center center;
+        background-size: cover;
         position: relative;
-        &--image {
-            width: 100%;
-            height: 100%;
-            background-image: url("../../../../../public/common/img/top/AnyCas_TOP1.jpg");
-            background-size: cover;
-            position: absolute;
-        }
         //テキスト中央揃え用------
         %--text {
             position: absolute;
@@ -57,7 +52,7 @@
 }
 
 .Mdl02Bnr {
-    &__base {
+    &__wrap {
         width: 100%;
         height: 300px;
         padding: 50px;
@@ -78,7 +73,7 @@
 }
 
 .Mdl03Bnr {
-    &__base {
+    &__wrap {
         background-color: #F5F5F5;
         width: 100%;
         height: 300px;
@@ -100,7 +95,7 @@
 }
 
 .Mdl04Bnr {
-    &__base {
+    &__wrap {
         width: 100%;
         height: 300px;
         padding: 50px;
