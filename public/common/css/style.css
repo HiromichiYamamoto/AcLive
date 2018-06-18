@@ -267,12 +267,18 @@ dd {
  * header
  ***********************/
 
+.HeadWrap {
+  height: 100%;
+  width: 100%;
+}
+
 .Head {
   height: 50px;
 }
 
 .Head__inner {
   background-color: #000;
+  height: 100%;
 }
 
 .Head__inner--nav {
@@ -602,11 +608,116 @@ dd {
 }
 
 .TopSub2 {
-  height: 100px;
   background-color: #000;
 }
 
+.TopSub2__menu {
+  height: 50px;
+  border-bottom: 4px solid yellow;
+}
+
+.TopSub2__menu--title {
+  margin-left: 40px;
+  color: red;
+  font-size: 1.2em;
+  line-height: 45px;
+  float: left;
+}
+
+.TopSub2__menu--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.TopSub2__menu--list-wrap {
+  padding: 0 40px;
+}
+
+.TopSub2Wrap {
+  padding: 10px 0;
+}
+
+.TopFootWrap {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+}
+
 .TopFoot {
+  background-color: #000;
   height: 650px;
+  border-bottom: 4px solid yellow;
+}
+
+.TopFoot__menuLeft {
+  width: calc(100% / (3 / 2));
+  float: left;
+}
+
+.TopFoot__menuLeft--top {
+  height: 65px;
+  border-bottom: 13px solid red;
+}
+
+.TopFoot__menuLeft--top-title {
+  color: red;
+  font-size: 3em;
+  float: left;
+}
+
+.TopFoot__menuLeft--top-sub {
+  color: #FFF;
+  font-size: 1.2em;
+  padding-left: 50px;
+  line-height: 67px;
+}
+
+.TopFoot__menuLeft--list {
+  height: 400px;
+}
+
+.TopFoot__menuLeft--button {
+  color: #FFF;
+  top: 58%;
+  display: inline-block;
+  padding: 0.3em 2.3em;
+  text-decoration: none;
+  background-color: #000;
+  border-radius: 50px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  float: right;
+}
+
+.ProMainWrap {
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+}
+
+.avatar {
+  display: inline-block;
+  line-height: 50px;
+  padding: 3px 0;
+  width: 43px;
+  height: 43px;
+  background: #fff url(/images/faq-regist.png?93598e1344ab9c741dcdf78420ea211d) center center no-repeat;
+  background-origin: border-box;
+  background-size: cover;
+  border-radius: 50%;
+  border: solid 2px #000;
+}
+
+.UserList {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.UserList__nickname {
+  color: #FFF;
+  float: right;
+  line-height: 45px;
+  margin-left: 5px;
 }
 

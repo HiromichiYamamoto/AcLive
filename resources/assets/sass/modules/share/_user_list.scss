@@ -1,0 +1,22 @@
+.avatar {
+    display:inline-block;
+    line-height: 50px;
+    padding: 3px 0;
+    width: 43px;
+    height: 43px;
+    background: #fff url("../../../../../public/common/img/icon/faq-regist.png") center center no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+    border-radius: 50%;
+    border: solid 2px $color-black;
+}
+
+.UserList {
+    justify-content: space-around;
+    &__nickname {
+        color: $color-white;
+        float: right;
+        line-height: 45px;
+        margin-left: 5px;
+    }
+}
