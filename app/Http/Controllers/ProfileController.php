@@ -9,4 +9,8 @@ class ProfileController extends Controller
     public function index() {
         return view('ac.profile.index');
     }
+
+    public function input() {
+        return view('ac.profile.input');
+    }
 }

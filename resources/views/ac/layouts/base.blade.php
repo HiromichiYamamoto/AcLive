@@ -14,11 +14,11 @@
     <div id="container">
         @if(Auth::user())
             <header class="Head">
-                <div class="Headrap">
+                <div class="HeadWrap">
                     <div class="Head__inner">
                         <nav class="Head__inner--nav">
-                            <div class="Head__inner--nav-title">AnyCas</div>
-                            <div class="Head__inner--nav-login link"><a href="{{route('logout')}}">ログアウトする</a></div>
+                            <a href="{{route('top')}}" class="Head__inner--nav-title">AnyCas</a>
+                            <div><a class="Head__inner--nav-login link" href="{{route('logout')}}">ログアウトする</a></div>
                             <a href="{{ route('profile') }}" class="Head__inner--nav-login" title="マイページへ">
                                 @if($navData['userInfo']['avatar'])
                                     <div class="Head__inner--nav-avatar" style="background-image: url('{{ $navData['userInfo']['avatar'] }}');"></div>
@@ -32,17 +32,18 @@
                 </div>
             </header>
         @else
-            <header clss="Head">
+            <header class="Head">
                 <div class="HeadWrap">
                     <div class="Head__inner">
                         <nav class="Head__inner--nav">
-                            <div class="Head__inner--nav-title">AnyCas</div>
+                            <a href="{{route('top')}}" class="Head__inner--nav-title">AnyCas</a>
                             <a href="{{ route('login') }}" title="ログインページへ" class="Head__inner--nav-login">ログイン</a>
                         </nav>
                     </div>
                 </div>
             </header>
         @endif
+
         @yield('content')
 
         <footer class="Foot">

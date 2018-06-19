@@ -30,3 +30,4 @@ Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 
 //profile
 Route::any('profile', 'ProfileController@index')->name('profile');
+Route::any('profile/input', 'ProfileController@input')->name('profile.input');
