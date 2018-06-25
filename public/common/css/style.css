@@ -264,8 +264,135 @@ dd {
 }
 
 /************************
+ * FORM
+ ***********************/
+
+form {
+  font-size: 1.25em;
+}
+
+input,
+textarea,
+select,
+option,
+button {
+  padding: 0.5em;
+  border: solid 1px #D6D6D6;
+  border-radius: 0.25em;
+}
+
+form *[readonly] {
+  color: #999999;
+}
+
+form .default-color {
+  color: #333333;
+}
+
+/* input */
+
+input.error,
+textarea.error,
+select.error,
+label.input-file.error {
+  border-color: #ff0000;
+}
+
+input[type="text"] {
+  width: 100%;
+}
+
+input[type="search"] {
+  padding-right: 2em;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  background-repeat: no-repeat;
+  background-size: 1em;
+  background-position: right 0.5em center;
+  cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 1.25em;
+  height: 1.25em;
+  margin-top: 0.125em;
+  margin-bottom: 0.125em;
+  content: "";
+  background-color: #FFF;
+  cursor: pointer;
+  margin-right: 0.5em;
+  outline: 0;
+}
+
+input[type="radio"]:disabled,
+input[type="checkbox"]:disabled {
+  background-color: #E2E2E2;
+}
+
+input[type="radio"] {
+  border-radius: 50%;
+}
+
+input[type="radio"]:CHECKED {
+  border: none;
+}
+
+input[type="radio"]:CHECKED:AFTER {
+  position: absolute;
+  display: block;
+  width: 1.25em;
+  height: 1.25em;
+  top: 0;
+  left: 0;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+input[type="checkbox"] {
+  border-radius: 0.2em;
+}
+
+input[type="checkbox"]:CHECKED:AFTER {
+  position: absolute;
+  display: block;
+  top: 0.125em;
+  left: 0.125em;
+  line-height: 1em;
+  content: "\F00C";
+  color: #52B2E6;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  cursor: pointer;
+  line-height: 1.5em;
+  margin-right: 1em;
+  vertical-align: top;
+}
+
+/************************
  * header
  ***********************/
+
+.headTitle {
+  background-color: #000;
+  width: 50px;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+}
+
+.headTitle__box--icon {
+  color: #FFF;
+}
 
 .HeadWrap {
   height: 100%;
@@ -288,7 +415,7 @@ dd {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 60px;
 }
 
 .Head__inner--nav-title {
@@ -480,7 +607,7 @@ dd {
 .Mdl02Bnr__wrap {
   width: 100%;
   height: 300px;
-  padding: 50px;
+  padding: 60px;
 }
 
 .Mdl02Bnr__wrap .Mdl01Bnr .Mdl01Bnr__wrap--text1,
@@ -512,7 +639,7 @@ dd {
   background-color: #F5F5F5;
   width: 100%;
   height: 300px;
-  padding: 50px;
+  padding: 60px;
 }
 
 .Mdl03Bnr__wrap .Mdl01Bnr .Mdl01Bnr__wrap--text1,
@@ -543,7 +670,7 @@ dd {
 .Mdl04Bnr__wrap {
   width: 100%;
   height: 300px;
-  padding: 50px;
+  padding: 60px;
 }
 
 .Mdl04Bnr__wrap .Mdl01Bnr .Mdl01Bnr__wrap--text1,
@@ -576,16 +703,23 @@ dd {
   height: 650px;
   background: url(/images/Top-BackCover.jpg?4a63dbc8ebb4cac95799c6e6e9425237) no-repeat center center;
   background-size: cover;
-  position: relative;
 }
 
 .TopMainWrap {
-  padding: 40px;
+  padding: 60px;
   height: 100%;
+  width: 100%;
 }
 
 .TopMainBox {
-  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.TopMainBox__menu {
+  width: calc(100vw / 6);
 }
 
 .TopMainBox__menu li {
@@ -597,6 +731,19 @@ dd {
   color: #FFF;
   font-size: 1.2em;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.TopMainBox__live {
+  width: calc(100vw / 1.5);
+}
+
+.TopMainBox__live--movie {
+  width: 100%;
+  height: 100%;
+}
+
+.TopMainBox__now {
+  width: calc(100vw / 6);
 }
 
 .TopMainBox__menu-text a:hover {
@@ -617,7 +764,7 @@ dd {
 }
 
 .TopSub2__menu--title {
-  margin-left: 40px;
+  margin-left: 60px;
   color: red;
   font-size: 1.2em;
   line-height: 45px;
@@ -641,7 +788,7 @@ dd {
 .TopFootWrap {
   width: 100%;
   height: 100%;
-  padding: 40px;
+  padding: 60px;
 }
 
 .TopFoot {
@@ -690,10 +837,142 @@ dd {
   float: right;
 }
 
+.MyProfile {
+  background-color: #000;
+}
+
+.MyProfile__homeImg {
+  min-width: 100vw;
+  height: 680px;
+  background: url(/images/MypageHome.jpg?616df73656c396c5602022e05348725d) no-repeat center center;
+  background-size: 100% 100%, auto;
+  position: relative;
+}
+
+.MyProfile__homeImg-shadow {
+  position: absolute;
+  top: 350px;
+  width: 100%;
+  height: 330px;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.MyProfile__box {
+  position: absolute;
+  top: calc(100% / 2.5);
+  width: 100%;
+  padding: 0 180px 20px 180px;
+}
+
+.MyProfile__box--avatar {
+  display: inline-block;
+  line-height: 50px;
+  padding: 3px 0;
+  width: calc(100vw / 6);
+  height: calc(100vw / 6);
+  background: #fff url(/images/faq-regist.png?93598e1344ab9c741dcdf78420ea211d) center center no-repeat;
+  background-origin: border-box;
+  background-size: cover;
+  border-radius: 50%;
+  float: left;
+}
+
+.MyProfile__box--right {
+  float: right;
+  padding-top: 100px;
+}
+
+.MyProfile__box--right-message {
+  display: inline-block;
+  padding: 0.3em 4em;
+  text-decoration: none;
+  border: solid 2px #FFF;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  font-size: 2.5vw;
+  font-size: 2.5vh;
+  color: #FFF;
+}
+
+.MyProfile__box--right-status {
+  float: right;
+  background-color: #FFF;
+  height: 40px;
+  width: 80px;
+  margin-left: 20px;
+}
+
+.MyProfile__box--right-now {
+  width: 100%;
+  height: 40px;
+  padding: 0.3em 4em;
+  text-decoration: none;
+  border-radius: 10px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  font-size: 2.5vw;
+  font-size: 2.5vh;
+  color: #FFF;
+  text-align: center;
+  margin-top: 20px;
+  background-color: red;
+}
+
+.MyProfile__box--nickname {
+  clear: both;
+  font-size: 3.8vmax;
+  padding: 20px 20px 20px 0;
+  color: #FFF;
+  letter-spacing: 2px;
+}
+
+.MyProfile__box--input {
+  float: right;
+  color: #FFF;
+  font-size: 1.3vmax;
+}
+
+.MyProfile__box--follow {
+  color: #FFF;
+  float: left;
+  font-size: 1.6vmax;
+  margin-right: 40px;
+}
+
+.MyProfile__box--follower {
+  color: #FFF;
+  font-size: 1.6vmax;
+}
+
+.MyProfile__wrap {
+  padding: 20px 180px 20px 180px;
+}
+
+.MyProfile__text p {
+  color: #FFF;
+  font-size: 1.3em;
+  line-height: 40px;
+}
+
 .ProMainWrap {
   height: 100%;
   width: 100%;
   padding: 40px;
+}
+
+.ProInputMain__nickname {
+  font-size: 1em;
+}
+
+.ProInputMain__nickname-form {
+  padding-top: 10px;
+}
+
+.nickname {
+  color: red;
 }
 
 .avatar {
