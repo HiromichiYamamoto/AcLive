@@ -13,13 +13,18 @@
 <body>
     <div id="container">
         @if(Auth::user())
+            <div class="headTitle">
+                <div class="headTitle__box">
+                    <div class="headTitle__box--icon">ホーム</div>
+                </div>
+            </div>
             <header class="Head">
                 <div class="HeadWrap">
                     <div class="Head__inner">
                         <nav class="Head__inner--nav">
                             <a href="{{route('top')}}" class="Head__inner--nav-title">AnyCas</a>
                             <div><a class="Head__inner--nav-login link" href="{{route('logout')}}">ログアウトする</a></div>
-                            <a href="{{ route('profile') }}" class="Head__inner--nav-login" title="マイページへ">
+                            <a href="{{ route('mypage') }}" class="Head__inner--nav-login" title="マイページへ">
                                 @if($navData['userInfo']['avatar'])
                                     <div class="Head__inner--nav-avatar" style="background-image: url('{{ $navData['userInfo']['avatar'] }}');"></div>
                                 @else
