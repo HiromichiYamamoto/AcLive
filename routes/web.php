@@ -29,5 +29,6 @@ Route::get('entry/line', 'Auth\SocialController@getLineAuthCallback');
 Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 
 //profile
-Route::any('profile', 'ProfileController@index')->name('profile');
-Route::any('profile/input', 'ProfileController@input')->name('profile.input');
+Route::any('mypage', 'MypageController@index')->name('mypage');
+Route::any('mypage/input', 'MypageController@input')->name('mypage.input');
+Route::post('mypage/complete', 'MypageController@complete')->name('mypage/complete');

@@ -74,3 +74,88 @@ dd {
     text-align: center;
     margin-bottom: 20px;
 }
+
+/************************
+ * FORM
+ ***********************/
+form { font-size: 1.25em; }
+input, textarea, select, option, button {
+    padding: 0.5em;
+    border: solid 1px #D6D6D6;
+    border-radius: 0.25em;
+}
+
+form *[readonly] { color: #999999; }
+form .default-color {
+    color: #333333;
+}
+
+/* input */
+input.error, textarea.error, select.error, label.input-file.error { border-color: #ff0000; }
+input[type="text"] {
+    width: 100%;
+}
+input[type="search"] {
+    padding-right: 2em;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    //background-image: url("../../common/img/icon/icon_input_search.png");
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: right 0.5em center;
+    cursor:pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1.25em;
+    height: 1.25em;
+    margin-top: 0.125em;
+    margin-bottom: 0.125em;
+    content: "";
+    background-color: #FFF;
+    cursor: pointer;
+    margin-right: 0.5em;
+    outline: 0;
+}
+input[type="radio"]:disabled,
+input[type="checkbox"]:disabled { background-color: #E2E2E2; }
+
+input[type="radio"] { border-radius: 50%; }
+input[type="radio"]:CHECKED { border: none; }
+input[type="radio"]:CHECKED:AFTER {
+    position: absolute;
+    display: block;
+    width: 1.25em;
+    height: 1.25em;
+    top: 0;
+    left: 0;
+    content: "";
+    //background-image: url("../../common/img/icon/icon_input_radio.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+input[type="checkbox"] { border-radius: 0.2em; }
+input[type="checkbox"]:CHECKED:AFTER {
+    position: absolute;
+    display: block;
+    top: 0.125em;
+    left: 0.125em;
+    line-height: 1em;
+    //font-family: 'iconfont';
+    content: "\f00c";
+    color: #52B2E6;
+}
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    cursor: pointer;
+    line-height: 1.5em;
+    margin-right: 1em;
+    vertical-align: top;
+}

@@ -1,27 +1,27 @@
 @extends('ac.layouts.base')
 
 @section('content')
-
     <section class="section-1">
-        <div class="TopMain">
-            <div class="TopMainWrap">
-                <div class="TopMainBox">
-                    <ul class="TopMainBox__menu">
-                        <li><a href=""><p>ホーム</p></a></li>
-                        <li><a href=""><p>ライブ</p></a></li>
-                        <li><a href=""><p>タイムテーブル</p></a></li>
-                        <li><a href=""><p>イベント</p></a></li>
-                        <li><a href=""><p>キャンペーン</p></a></li>
-                        <li><a href=""><p>ホットトピックス</p></a></li>
-                        <li><a href=""><p>ランキング</p></a></li>
-                        <li><a href=""><p>アバターショップ</p></a></li>
-                        <li><a href=""><p>ルーム</p></a></li>
-                    </ul>
-                    <div class="TopMainBox__live">
-                        <div class="TopMainBox__live--movie"></div>
-                    </div>
-                    <div class="TopMainBox__now">
-                        <div class="TopMainBox__now--icon"></div>
+            <div class="TopMain">
+                <div class="TopMainWrap">
+                    <div class="TopMainBox">
+                        <ul class="TopMainBox__menu">
+                            <li><a href=""><p>ホーム</p></a></li>
+                            <li><a href=""><p>ライブ</p></a></li>
+                            <li><a href=""><p>タイムテーブル</p></a></li>
+                            <li><a href=""><p>イベント</p></a></li>
+                            <li><a href=""><p>キャンペーン</p></a></li>
+                            <li><a href=""><p>ホットトピックス</p></a></li>
+                            <li><a href=""><p>ランキング</p></a></li>
+                            <li><a href=""><p>アバターショップ</p></a></li>
+                            <li><a href=""><p>ルーム</p></a></li>
+                        </ul>
+                        <div class="TopMainBox__live">
+                            <iframe class="TopMainBox__live--movie" src="https://www.youtube.com/embed/EEr_rLF9its" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                        <div class="TopMainBox__now">
+                            <div class="TopMainBox__now--icon"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,5 @@
                     <div>ユーザー</div>
                 </div>
             </div>
-        </div>
     </section>
-
 @endsection

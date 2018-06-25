@@ -6,15 +6,17 @@
     height: 650px;
     background: url("../../../../../public/common/img/top/Top-BackCover.jpg") no-repeat center center;
     background-size: cover;
-    position: relative;
 }
 .TopMainWrap {
-    padding: 40px;
+    padding: 60px;
     height: 100%;
+    width: 100%;
 }
 .TopMainBox {
-    position: absolute;
+    display: flex;
+    height: 100%;
     &__menu {
+        width: calc(100vw / 6);
         & li {
             display: inline;
             & p {
@@ -26,12 +28,15 @@
         }
     }
     &__live {
+        width: calc(100vw / 1.5);
         &--movie {
-
+            width: 100%;
+            height: 100%;
         }
 
     }
     &__now {
+        width: calc(100vw / 6);
         &--icon {
 
         }
@@ -53,7 +58,7 @@
         height: 50px;
         border-bottom: 4px solid yellow;
         &--title {
-            margin-left: 40px;
+            margin-left: 60px;
             color: red;
             font-size: 1.2em;
             line-height: 45px;
@@ -75,7 +80,7 @@
 .TopFootWrap {
     width: 100%;
     height: 100%;
-    padding: 40px;
+    padding: 60px;
 }
 
 .TopFoot {
