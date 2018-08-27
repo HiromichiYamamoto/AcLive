@@ -38,7 +38,7 @@ class CommonComposer
             $navData['userInfo']['nickname'] = $user->nickname;
             $navData['userInfo']['profile'] = $user->profile;
             $navData['userInfo']['rank'] = $user->rank;
-            $navData['userInfo']['avatar'] = $user->avatar;
+            $navData['userInfo']['avatar_url'] = $user->avatar_url;
             $navData['userInfo']['home_image'] = $user->home_image;
             $navData['userInfo']['membership_state'] = $user->membership_state;
 

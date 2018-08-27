@@ -6,8 +6,8 @@
             <div class="MyProfile__homeImg">
                 <div class="MyProfile__homeImg-shadow"></div>
                 <div class="MyProfile__box">
-                    @if($navData['userInfo']['avatar'])
-                        <div class="MyProfile__box--avatar" style="background-image: url('{{ $navData['userInfo']['avatar'] }}');"></div>
+                    @if($user->avatar_url)
+                        <div class="MyProfile__box--avatar" style="background-image: url('{{ $user->avatar_url }}');"></div>
                     @else
                         <div class="MyProfile__box--avatar"></div>
                     @endif

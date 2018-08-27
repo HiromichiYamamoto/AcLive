@@ -26,6 +26,7 @@ class ProfileConfirmRequest extends FormRequest
     {
         return [
             'nickname' => 'max:20|min:1',
+            'avatar' => '',
             'profile' => 'max:1000',
         ];
     }
@@ -34,6 +35,7 @@ class ProfileConfirmRequest extends FormRequest
         return [
             'nickname' => 'ニックネーム',
             'profile' => '自己紹介',
+            'avatar' => 'アバター',
         ];
     }
 
