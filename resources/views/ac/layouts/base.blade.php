@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>AnyCasLive</title>
+    <script src="{{ url('/common') }}/js/app.js"></script>
     <script src="{{ url('/common') }}/js/common.js"></script>
     <link media="all" type="text/css" rel="stylesheet" href="{{ url('/common') }}/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1,mini
@@ -25,8 +26,8 @@
                             <a href="{{route('top')}}" class="Head__inner--nav-title">AnyCas</a>
                             <div><a class="Head__inner--nav-login link" href="{{route('logout')}}">ログアウトする</a></div>
                             <a href="{{ route('mypage') }}" class="Head__inner--nav-login" title="マイページへ">
-                                @if($navData['userInfo']['avatar'])
-                                    <div class="Head__inner--nav-avatar" style="background-image: url('{{ $navData['userInfo']['avatar'] }}');"></div>
+                                @if($navData['userInfo']['avatar_url'])
+                                    <div class="Head__inner--nav-avatar" style="background-image: url('{{ $navData['userInfo']['avatar_url'] }}');"></div>
                                 @else
                                     <div class="Head__inner--nav-avatar"></div>
                                 @endif
