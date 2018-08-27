@@ -32,3 +32,10 @@ Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 Route::any('mypage', 'MypageController@index')->name('mypage');
 Route::any('mypage/input', 'MypageController@input')->name('mypage.input');
 Route::post('mypage/complete', 'MypageController@complete')->name('mypage/complete');
+Route::get('/upload/photo/user/{id}/avatar/{fileName}',          'PhotoController@userAvatar')->name('photo.userAvatar')->where('id', '[0-9]+');
+Route::post('profile/changeAvatar','ProfileController@changeAvatar')->name('profile/changeAvatar');
+
+Route::get('/local/user/{id}/avatar/{fileName}', 'PhotoController@userAvatar')->name('userAvatar')->where('id', '[0-9]+');
+
+// json
+Route::post('image/upload','ImageController@upload')->name('image/upload');
